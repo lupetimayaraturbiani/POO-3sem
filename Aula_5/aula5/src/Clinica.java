@@ -1,5 +1,11 @@
 public class Clinica {
 
+    public void fazOrcamento(Animal[] animais, boolean temExame){
+        for (Animal animal : animais) {
+            fazOrcamento(animal, temExame);
+        }
+    }
+
     public void fazOrcamento(Animal animal){
         fazOrcamento(animal, false);
     }
