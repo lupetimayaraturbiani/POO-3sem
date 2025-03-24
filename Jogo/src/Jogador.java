@@ -5,6 +5,12 @@ public class Jogador extends Criatura {
     private int ataqueForte = 120;
     private int ataqueFraco = 40;
     private int risco = 50;
+    private Arma[] armas = new Arma[] {
+            new Faca(),
+            new ArcoEFlecha(),
+            new Pistola(),
+            new Espada()
+    };
 
     public Jogador(String nome){
         super(nome, 500);
@@ -22,27 +28,20 @@ public class Jogador extends Criatura {
 
     @Override
     public void fazAtaque(Criatura criatura){
-        System.out.println("ataque de " + getNome());
+        System.out.println("Ataque do " + getNome());
+
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Escolha sua arma: ");
-        System.out.println("1) Faca\nDano: " + ataqueFraco + "\nRisco: 0%" + "\n2)Arco e flecha\nDano: " + ataqueForte + "\nRisco: " + risco + "%");
+        int i = 0;
+        for (Arma arma : this.armas) {
+            i++;
+            System.out.println(i + ") " + arma.mensagem());
+        }
+
         int escolha = sc.nextInt();
 
-        if (escolha == 1) {
-            criatura.tomaDano(this.ataqueFraco);
-        } else if(escolha == 2){
-            Random rd = new Random();
-            int sorteio = rd.nextInt(0, 100);
-            if (sorteio < risco) {
-                System.out.println("erro de mira! o ataque falhou!");
-                criatura.tomaDano(0);
-            } else{
-                System.out.println("acertou!");
-                criatura.tomaDano(ataqueForte);
-            }
-        } else {
-            criatura.tomaDano(0);
-        }
+        int danoAtual = this.armas[escolha - 1].getDano();
+        criatura.tomaDano(danoAtual);
     }
 }

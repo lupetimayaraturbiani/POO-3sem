@@ -1,6 +1,7 @@
-public class Malignus extends Inimigo { //classe abstrata pode ter método concreto, mas nunca o contrário
+public class Malignus extends Inimigo {
+    //classe abstrata pode ter método concreto, mas nunca o contrário
     public Malignus(){
-        super("Malignus", 500, 50);
+        super("Malignus", 500, 50, new Bloqueio(10));
     }
 
     @Override
