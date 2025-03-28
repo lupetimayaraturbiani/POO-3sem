@@ -1,6 +1,9 @@
 package org.example;
 
 public class Engenheiro extends Profissional {
+    //falta continuar o código e pegar do material do professor pra completar
+
+    private Engenheiros especialidade;
 
     @Override
     public int getSalario() {
@@ -22,8 +25,7 @@ public class Engenheiro extends Profissional {
 
     }
 
-    private String especialidade;
     Engenheiro(Engenheiros especialidade) {
-        this.especialidade = String.valueOf(especialidade);
+        this.especialidade = especialidade;
     }
 }
