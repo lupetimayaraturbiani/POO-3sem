@@ -1,33 +1,28 @@
 package org.example;
 
 public abstract class Profissional {
+    public static int populacao = 0;
 
     public static Profissional CriaProfissioanal(ListaProfissionais especialidade) {
+        populacao++;
+
         switch (especialidade){
             case programadorFrontEnd:
-                new ProgramadorFrontEnd();
-                break;
+                return new ProgramadorFrontEnd();
             case programadorBackEnd:
-                new ProgramadorBackEnd();
-                break;
+                return new ProgramadorBackEnd();
             case engenheiroMecanico:
-                new Engenheiro(Engenheiros.mecanico);
-                break;
+                return new Engenheiro(Engenheiros.mecanico);
             case engenheiroCivil:
-                new Engenheiro(Engenheiros.civil);
-                break;
+                return new Engenheiro(Engenheiros.civil);
             case engenheiroDados:
-                new Engenheiro(Engenheiros.dados);
-                break;
+                return new Engenheiro(Engenheiros.dados);
             case engenheiroEletricista:
-                new Engenheiro(Engenheiros.eletricista);
-                break;
+                return new Engenheiro(Engenheiros.eletricista);
             case engenheiroQuimico:
-                new Engenheiro(Engenheiros.quimico);
-                break;
+                return new Engenheiro(Engenheiros.quimico);
             default:
                 return new ProgramadorBackEnd();
-
         }
     }
 
