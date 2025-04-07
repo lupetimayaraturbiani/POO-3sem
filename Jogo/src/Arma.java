@@ -15,6 +15,26 @@ public class Arma {
         return this.nome + "\nDano: " + this.dano + "\nRisco: " + this.risco + "%";
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDano(int dano) {
+        this.dano = dano;
+    }
+
+    public int getRisco() {
+        return risco;
+    }
+
+    public void setRisco(int risco) {
+        this.risco = risco;
+    }
+
     public int getDano() {
         if(this.risco == 0){
             System.out.println("Acerto!!!");

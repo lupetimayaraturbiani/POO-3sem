@@ -8,6 +8,14 @@ public abstract class Inimigo extends Criatura {
         this.escudo = escudo;
     }
 
+    public int getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
     @Override
     public void tomaDano(int dano) {
         int novoDano = this.escudo.danoReduzido(dano);
@@ -18,4 +26,5 @@ public abstract class Inimigo extends Criatura {
     public void fazAtaque(Criatura criatura){
         criatura.tomaDano(this.ataque);
     }
+
 }
