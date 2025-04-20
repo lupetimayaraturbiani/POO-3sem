@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d268de2f-2978-4fa3-8450-9033b59be71a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Abominavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Batalha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Macabros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nocturnos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo/ArcoEFlecha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/ArcoEFlecha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Batalha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Batalha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Criatura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Criatura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Jogador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Macabros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Macabros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Pistola.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Pistola.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ArcoEFlecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArcoEFlecha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inimigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inimigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Batalha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Batalha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Criatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Criatura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pistola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pistola.java" afterDir="false" />
     </list>
@@ -40,21 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,6 +76,9 @@
       <updated>1742794895050</updated>
       <workItem from="1742794896326" duration="2449000" />
       <workItem from="1743881719712" duration="11696000" />
+      <workItem from="1744955935711" duration="3609000" />
+      <workItem from="1745176552361" duration="5679000" />
+      <workItem from="1745186779055" duration="627000" />
     </task>
     <servers />
   </component>

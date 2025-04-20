@@ -18,6 +18,11 @@ public class Jogador extends Criatura {
         super(nome, 500);
     }
 
+    public void restaurarVida(){
+        this.setVida(this.getVidaMax());
+        System.out.println(this.getNome() + " teve sua vida restaurada para " + this.getVida() + "!!");
+    }
+
     @Override
     public void fraseDeApresentacao(){
         System.out.println("vou acabar com vocês!!");

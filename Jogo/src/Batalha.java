@@ -1,35 +1,41 @@
 import java.util.Scanner;
 
 public class Batalha {
-    public void fazerbatalha(Criatura inimigo){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite seu nome: ");
-        String nome = sc.nextLine();
-        Jogador jogador = new Jogador(nome);
+    private boolean resultadoBatalha = false;
 
-        System.out.println("Bem vindos à grande batalha");
+    public boolean isResultadoBatalha() {
+        return resultadoBatalha;
+    }
+
+    public void setResultadoBatalha(boolean resultadoBatalha) {
+        this.resultadoBatalha = resultadoBatalha;
+    }
+
+    public Criatura fazerbatalha(Criatura inimigo, Jogador jogador) {
+        System.out.println("Bem-vindos à grande batalha!");
         jogador.fraseDeApresentacao();
         inimigo.fraseDeApresentacao();
-        while (true) {
+
+        while (jogador.estaVivo() && inimigo.estaVivo()) {
             jogador.fazAtaque(inimigo);
+
             if (inimigo.estaVivo()) {
                 inimigo.fazAtaque(jogador);
             }
 
-            if (!jogador.estaVivo()) {
-                jogador.fraseDeMorte();
-                System.out.println("Inimigo " + inimigo.getNome() + " venceu! boa sorte na próxima vez....");
-                break;
-            }
-
             jogador.mostraVida();
             inimigo.mostraVida();
+        }
 
-            if (!inimigo.estaVivo()) {
-                inimigo.fraseDeMorte();
-                System.out.println("Jogador(a) "+ jogador.getNome() +" venceu! parabéns!!!!");
-                break;
-            }
+        if (!jogador.estaVivo()) {
+            jogador.fraseDeMorte();
+            System.out.println("Inimigo " + inimigo.getNome() + " venceu! Boa sorte na próxima vez....");
+            return inimigo;
+        } else {
+            inimigo.fraseDeMorte();
+            System.out.println("Jogador(a) " + jogador.getNome() + " venceu! Parabéns!!!!");
+            return jogador;
         }
     }
+
 }

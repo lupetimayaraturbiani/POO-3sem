@@ -1,20 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
         //criando os três inimigos
-        Criatura m = new Macabros();
-        Criatura n = new Nocturnos();
-        Criatura a = new Abominavel();
+        Criatura macabros = new Macabros();
+        Criatura nocturnos = new Nocturnos();
+        Criatura abominavel = new Abominavel();
+
+        List<Criatura> inimigos = new ArrayList<>();
+
+        inimigos.add(macabros);
+        inimigos.add(nocturnos);
+        inimigos.add(abominavel);
+
+        //criando jogador
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        String nome = sc.nextLine();
+        Jogador jogador = new Jogador(nome);
 
 
-        //criando a três batalhas
-        Batalha b1 = new Batalha();
-        Batalha b2 = new Batalha();
-        Batalha b3 = new Batalha();
 
-        b1.fazerbatalha(m);
-        b2.fazerbatalha(n);
-        b3.fazerbatalha(a);
+        for (Criatura inimigo: inimigos) {
+            Batalha b = new Batalha();
+            Criatura campeao = b.fazerbatalha(inimigo, jogador);
+
+            if (campeao == inimigo) {
+                System.out.println(campeao.getNome() + " venceu, fim de jogo!");
+                break;
+            } else {
+                System.out.println(jogador.getNome() + " venceu essa rodada!");
+                jogador.restaurarVida();
+            }
+
+        }
+
     }
 }

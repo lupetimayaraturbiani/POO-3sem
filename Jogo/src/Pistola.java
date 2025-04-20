@@ -12,15 +12,13 @@ public class Pistola extends Arma{
 
     @Override
     public int getDano() {
-        for (int i = 0; i < this.municao; i++) {
-            municao--;
+        if (this.municao > 0) {
+            this.municao --;
             System.out.println("Munição restante: " + this.municao);
-        }
-        if(this.municao == 0){
-            System.out.println("Ataque falhou, sem munição");
-            return 0;
-        } else {
             return super.getDano();
+        } else {
+            System.out.println("Ataque falhou, as balas acabaram!");
+            return 0;
         }
     }
 }

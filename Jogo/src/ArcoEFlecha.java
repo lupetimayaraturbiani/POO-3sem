@@ -13,17 +13,13 @@ public class ArcoEFlecha extends Arma{
 
     @Override
     public int getDano() {
-        for (int i = 0; i < qtdFlechas; i++) {
+        if (qtdFlechas > 0){
             qtdFlechas --;
-            System.out.println("Flechas restantes: " + this.qtdFlechas);
-        }
-
-        if(qtdFlechas == 0){
-            System.out.println("Ataque falhou, suas flechas acabaram");
-            return 0;
-        } else {
+            System.out.println("Flechas restantes: " + qtdFlechas);
             return super.getDano();
+        } else {
+            System.out.println("Ataque falhou, suas flechas acabaram!");
+            return 0;
         }
-
     }
 }
