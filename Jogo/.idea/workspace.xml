@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d268de2f-2978-4fa3-8450-9033b59be71a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo/ArcoEFlecha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/ArcoEFlecha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Batalha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Batalha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Criatura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Criatura.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Jogador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Macabros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Macabros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo/Pistola.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo/Pistola.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArcoEFlecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArcoEFlecha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Batalha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Batalha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Criatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Criatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pistola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pistola.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +66,8 @@
       <workItem from="1744955935711" duration="3609000" />
       <workItem from="1745176552361" duration="5679000" />
       <workItem from="1745186779055" duration="627000" />
+      <workItem from="1746512798328" duration="11000" />
+      <workItem from="1747781266856" duration="180000" />
     </task>
     <servers />
   </component>
